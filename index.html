@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranav Venutur — Mechanical Engineer</title>
+  <meta name="description" content="Pranav Venutur is a Mechanical Engineering student at UIUC working on aerospace propulsion, rocketry, and machine learning applied to engineering.">
+  <meta property="og:title" content="Pranav Venutur — Mechanical Engineer">
+  <meta property="og:description" content="Aerospace propulsion, rocketry, and machine learning at UIUC.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..400&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Pranav Venutur home">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- PV monogram with rocket silhouette -->
+          <rect width="36" height="36" rx="8" fill="currentColor" opacity="0.08"/>
+          <path d="M18 6 L22 26 L18 23 L14 26 Z" fill="currentColor" opacity="0.9"/>
+          <path d="M14 16 Q18 8 22 16" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.6"/>
+          <circle cx="18" cy="28.5" r="1.5" fill="var(--color-accent)" opacity="0.9"/>
+        </svg>
+        <span class="nav-name">Pranav Venutur</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#awards">Awards</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <canvas id="starCanvas"></canvas>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge fade-in">
+          <span class="badge-dot"></span>
+          UIUC · Mechanical Engineering · Class of 2028
+        </div>
+        <div class="hero-name fade-in">Pranav Venutur</div>
+        <h1 class="hero-title fade-in">
+          Building the systems<br>
+          <em>that reach beyond</em>
+        </h1>
+        <p class="hero-sub fade-in">
+          Green energy, robotics, automation, and machine learning —<br>engineering at the intersection of precision and ambition.
+        </p>
+        <div class="hero-actions fade-in">
+          <a href="#experience" class="btn btn-primary">View My Work</a>
+          <a href="mailto:pranav.venutur@gmail.com" class="btn btn-ghost">Get in Touch</a>
+        </div>
+        <div class="hero-stats fade-in">
+          <div class="stat">
+            <span class="stat-num">4.0</span>
+            <span class="stat-label">GPA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Active Roles</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Awards</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-label fade-in">About</div>
+            <h2 class="section-title fade-in">
+              Where engineering meets ambition
+            </h2>
+            <p class="about-body fade-in">
+              I'm a freshman at the University of Illinois Urbana-Champaign studying Mechanical Engineering with a 4.0 GPA. My work spans green energy systems, CAD design, FEA simulation, and applying machine learning to real engineering problems.
+            </p>
+            <p class="about-body fade-in">
+              From researching green hydrogen production to designing actuation systems for energy infrastructure, I'm drawn to engineering that makes a real impact on sustainability and clean technology.
+            </p>
+            <p class="about-body fade-in">
+              I work across CAD modeling, structural and thermal simulation, and data-driven modeling — building systems that are precise, robust, and ready to scale.
+            </p>
+            <div class="about-interests fade-in">
+              <span class="tag">Green Energy</span>
+              <span class="tag">Robotics &amp; Automation</span>
+              <span class="tag">Machine Learning</span>
+              <span class="tag">FEA Simulation</span>
+              <span class="tag">CAD Design</span>
+            </div>
+          </div>
+          <div class="about-visual fade-in">
+            <div class="about-card-stack">
+              <div class="about-card about-card-1">
+                <div class="about-card-icon">🚀</div>
+                <div class="about-card-label">Liquid Rocketry at Illinois</div>
+                <div class="about-card-sub">Pumps Team</div>
+              </div>
+              <div class="about-card about-card-2">
+                <div class="about-card-icon">⚡</div>
+                <div class="about-card-label">Electric Propulsion Lab</div>
+                <div class="about-card-sub">CubeSat Propulsion</div>
+              </div>
+              <div class="about-card about-card-3">
+                <div class="about-card-icon">🛢️</div>
+                <div class="about-card-label">Cavelle Energy Tech</div>
+                <div class="about-card-sub">ME Intern</div>
+              </div>
+              <div class="about-card about-card-4">
+                <div class="about-card-icon">🌌</div>
+                <div class="about-card-label">URSA Program</div>
+                <div class="about-card-sub">Plasma Simulations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-label">Experience</div>
+          <h2 class="section-title">Where I've worked &amp; researched</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Feb 2026 – Present</span>
+              <span class="timeline-type">Internship</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Mechanical Engineering Intern</h3>
+                  <div class="timeline-org">Cavelle Energy Technologies · Remote</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">⚙️</div>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Outlined an actuation system for an automated Blowout Preventer (BOP), detailing motor-to-gear drive string using roller screws for high-impact resistance and sensor integration plans</li>
+                <li>Developed an FEA stress analysis simulation plan defining modeling simplifications, boundary conditions, and pressure load cases to ensure structural integrity under extreme conditions</li>
+                <li>Analyzed thermal risks for actuators, elastomer/metal seal performance, and lubricant to guide design decisions</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">FEA</span>
+                <span class="tag tag-sm">Actuation Systems</span>
+                <span class="tag tag-sm">BOP Design</span>
+                <span class="tag tag-sm">Thermal Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2026 – Present</span>
+              <span class="timeline-type">Research</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Undergraduate Research Engineer</h3>
+                  <div class="timeline-org">Electric Propulsion Lab · UIUC · Urbana, IL</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">⚡</div>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Designing a multimode monopropellant feed system for chemical and electrospray propulsion on a CubeSat</li>
+                <li>Performed valve and sensor failure mode assessments to identify 15 fault cases and mitigation strategies</li>
+                <li>Supported development of flow and sensor validation test plans to evaluate subsystem robustness</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">CubeSat</span>
+                <span class="tag tag-sm">Propulsion</span>
+                <span class="tag tag-sm">Failure Analysis</span>
+                <span class="tag tag-sm">Electrospray</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2025 – Present</span>
+              <span class="timeline-type">Student Team</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Mechanical Design Engineer</h3>
+                  <div class="timeline-org">Liquid Rocketry at Illinois — Pumps Team · Urbana, IL</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">🚀</div>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Designed a heat-sink-based thermal management system for an electric motor-driven pump using Siemens NX CAD</li>
+                <li>Performed heat transfer calculations to optimize heat sink surface area and maintain motor temperature &lt;82°C</li>
+                <li>Conducted ANSYS thermal–structural coupled FEA to evaluate heat sink performance under motor weight and thermal load</li>
+                <li>Optimized design for integration with motor housing and manufacturability using mill and lathe</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">Siemens NX</span>
+                <span class="tag tag-sm">ANSYS</span>
+                <span class="tag tag-sm">Thermal Management</span>
+                <span class="tag tag-sm">CAD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Feb 2026 – Present</span>
+              <span class="timeline-type">Research</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Undergraduate Researcher</h3>
+                  <div class="timeline-org">URSA Program · UIUC · Urbana, IL</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">🌌</div>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Developed Python simulations of charged particle dynamics implementing Forward Euler, Boris, and Runge–Kutta integrators and evaluated timestep stability across integration schemes</li>
+                <li>Implemented accept–reject sampling to generate particle velocity distributions, exploring the effect of sample size on distribution convergence</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">Python</span>
+                <span class="tag tag-sm">Plasma Physics</span>
+                <span class="tag tag-sm">Numerical Methods</span>
+                <span class="tag tag-sm">Simulation</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2025 – Feb 2026</span>
+              <span class="timeline-type">Student Team</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Ion Optics Design Engineer</h3>
+                  <div class="timeline-org">Electric Propulsion Initiative (ION-I)</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">🔬</div>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Engineered ion optics assembly, defining alignment, spacing, and mechanical interfaces for grids, including radial pad features for high voltage connections</li>
+                <li>Developed Fusion 360 CAD models of screen and segmented accelerator grids to support thrust vectoring</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">Fusion 360</span>
+                <span class="tag tag-sm">Ion Optics</span>
+                <span class="tag tag-sm">CAD</span>
+                <span class="tag tag-sm">Electric Propulsion</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep – Dec 2025</span>
+              <span class="timeline-type">Program</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Command &amp; Data Handling Engineer</h3>
+                  <div class="timeline-org">NASA L'SPACE Program</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">🛸</div>
+              </div>
+              <p class="timeline-body">Participated through Mission Concept Review (MCR), System Requirements Review (SRR), Mission Design Review (MDR), and Preliminary Design Review (PDR) stages.</p>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">NASA</span>
+                <span class="tag tag-sm">Systems Engineering</span>
+                <span class="tag tag-sm">Mission Design</span>
+                <span class="tag tag-sm">CDH</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item fade-in">
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2024 – Jan 2025</span>
+              <span class="timeline-type">Teaching</span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Lead Physics Coach</h3>
+                  <div class="timeline-org">North South Foundation</div>
+                </div>
+                <div class="timeline-icon" aria-hidden="true">📐</div>
+              </div>
+              <p class="timeline-body">Taught Physics covering vectors, kinematics, dynamics, work &amp; energy, momentum, circular motion, rotational motion, fluids, gravitation, and oscillation. Prepared students for the F=ma Physics Olympiad exam.</p>
+              <div class="timeline-tags">
+                <span class="tag tag-sm">Physics Olympiad</span>
+                <span class="tag tag-sm">Teaching</span>
+                <span class="tag tag-sm">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-label">Projects</div>
+          <h2 class="section-title">Selected work</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card fade-in">
+            <div class="project-card-inner">
+              <div class="project-top">
+                <div class="project-num">01</div>
+                <div class="project-icon large" aria-hidden="true">⚙️</div>
+              </div>
+              <div class="project-body">
+                <div class="project-date">Dec 2025</div>
+                <h3 class="project-title">CNC Turning Process Modeling Using Machine Learning</h3>
+                <p class="project-desc">Built surrogate machine learning models in Python to predict cutting force and surface roughness from machining parameters, comparing neural network and random forest multi-output regressors.</p>
+                <ul class="project-highlights" role="list">
+                  <li>Designed grouped train/test split to prevent data leakage across repeated cutting conditions</li>
+                  <li>Validated predictions against physical force and roughness trends in machining</li>
+                  <li>Compared neural network vs. random forest performance for multi-output regression</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Neural Networks</span>
+                <span class="tag">Random Forest</span>
+                <span class="tag">ML</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-in">
+            <div class="project-card-inner">
+              <div class="project-top">
+                <div class="project-num">02</div>
+                <div class="project-icon" aria-hidden="true">⚗️</div>
+              </div>
+              <div class="project-body">
+                <div class="project-date">Sep 2023 – May 2024</div>
+                <h3 class="project-title">Hydrogen Production in Water Electrolysis</h3>
+                <p class="project-desc">Built a small-scale electrolyzer to test which operating conditions maximize green hydrogen production. Conducted experiments and authored a research paper evaluating how electrolyte concentration, solution temperature, and electrode material affect hydrogen output.</p>
+                <ul class="project-highlights" role="list">
+                  <li>Used an artificial neural network to predict production at untested conditions</li>
+                  <li>Awarded Naval Science Award at state level by U.S. Office of Naval Research</li>
+                  <li>Ranked top 10 research papers at IJAS 2025 State Exposition</li>
+                </ul>
+              </div>
+              <div class="project-tags">
+                <span class="tag">Electrochemistry</span>
+                <span class="tag">ANN</span>
+                <span class="tag">Green Energy</span>
+                <span class="tag">Research</span>
+              </div>
+            </div>
+          </article>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-label">Technical Skills</div>
+          <h2 class="section-title">Tools &amp; capabilities</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">💻</div>
+            <h3 class="skill-group-title">Programming</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">Python</span>
+              <span class="skill-pill">Java</span>
+              <span class="skill-pill">Arduino</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">🖥️</div>
+            <h3 class="skill-group-title">CAD &amp; Design</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">Siemens NX</span>
+              <span class="skill-pill">Autodesk Fusion 360</span>
+              <span class="skill-pill">Autodesk Inventor</span>
+              <span class="skill-pill">NI Multisim</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">🔬</div>
+            <h3 class="skill-group-title">Simulation</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">ANSYS Mechanical</span>
+              <span class="skill-pill">Static Structural FEA</span>
+              <span class="skill-pill">Steady State Thermal</span>
+              <span class="skill-pill">Transient Thermal</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">📊</div>
+            <h3 class="skill-group-title">Modeling &amp; ML</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">Regression Modeling</span>
+              <span class="skill-pill">Artificial Neural Networks</span>
+              <span class="skill-pill">Random Forest</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">🚀</div>
+            <h3 class="skill-group-title">Aerospace</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">Propulsion Systems</span>
+              <span class="skill-pill">CubeSat Design</span>
+              <span class="skill-pill">Mission Design</span>
+              <span class="skill-pill">Ion Optics</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon" aria-hidden="true">🌐</div>
+            <h3 class="skill-group-title">Languages</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill-primary">English</span>
+              <span class="skill-pill">Spanish</span>
+            </div>
+            <p class="skill-note">Illinois State Seal of Biliteracy · AP Spanish score: 5</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="section awards" id="awards">
+      <div class="container">
+        <div class="section-header fade-in">
+          <div class="section-label">Honors &amp; Awards</div>
+          <h2 class="section-title">Recognition</h2>
+        </div>
+        <div class="awards-list">
+
+          <div class="award-item fade-in">
+            <div class="award-icon" aria-hidden="true">🏅</div>
+            <div class="award-content">
+              <div class="award-meta">
+                <span class="award-issuer">U.S. Office of Naval Research</span>
+                <span class="award-date">May 2025</span>
+              </div>
+              <h3 class="award-title">Naval Science Award — State Level</h3>
+              <p class="award-desc">Awarded at the Illinois Junior Academy of Science 2025 State Exposition for an exceptional research paper studying the effect of different factors on green hydrogen production.</p>
+            </div>
+          </div>
+
+          <div class="award-item fade-in">
+            <div class="award-icon" aria-hidden="true">🥇</div>
+            <div class="award-content">
+              <div class="award-meta">
+                <span class="award-issuer">Illinois Junior Academy of Science</span>
+                <span class="award-date">May 2025</span>
+              </div>
+              <h3 class="award-title">Top 10 Research Paper in State</h3>
+              <p class="award-desc">Awarded for green hydrogen research paper ranking among the top ten papers at the IJAS 2025 State Exposition.</p>
+            </div>
+          </div>
+
+          <div class="award-item fade-in">
+            <div class="award-icon" aria-hidden="true">🏆</div>
+            <div class="award-content">
+              <div class="award-meta">
+                <span class="award-issuer">Illinois Junior Academy of Science</span>
+                <span class="award-date">May 2024</span>
+              </div>
+              <h3 class="award-title">Exceptional Project in Chemistry — State Level</h3>
+              <p class="award-desc">Awarded at IJAS 2024 State Exposition for outstanding work in electrochemistry and green hydrogen production.</p>
+            </div>
+          </div>
+
+          <div class="award-item fade-in">
+            <div class="award-icon" aria-hidden="true">🎖️</div>
+            <div class="award-content">
+              <div class="award-meta">
+                <span class="award-issuer">U.S. Office of Naval Research</span>
+                <span class="award-date">March 2024</span>
+              </div>
+              <h3 class="award-title">Naval Science Award — Regional Level</h3>
+              <p class="award-desc">Awarded at IJAS 2024 Region 6 Science Fair for "inventive approach, meticulous execution, and insightful findings" in green hydrogen research.</p>
+            </div>
+          </div>
+
+          <div class="award-item fade-in">
+            <div class="award-icon" aria-hidden="true">📜</div>
+            <div class="award-content">
+              <div class="award-meta">
+                <span class="award-issuer">State of Illinois</span>
+              </div>
+              <h3 class="award-title">Illinois State Seal of Biliteracy — Spanish</h3>
+              <p class="award-desc">Earned a 5 on the AP Spanish Language and Culture exam, achieving full listening, reading, writing, and speaking proficiency.</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-card fade-in">
+          <div class="contact-glow" aria-hidden="true"></div>
+          <div class="contact-content">
+            <div class="section-label">Contact</div>
+            <h2 class="contact-title">Let's connect</h2>
+            <p class="contact-sub">
+              I'm always open to conversations about aerospace engineering, research opportunities, internships, or just talking about cool projects.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:pranav.venutur@gmail.com" class="contact-link-primary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                pranav.venutur@gmail.com
+              </a>
+              <a href="tel:2247073590" class="contact-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                224-707-3590
+              </a>
+              <a href="https://www.linkedin.com/in/pranav-venutur/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                LinkedIn
+              </a>
+            </div>
+            <div class="contact-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Urbana-Champaign, Illinois
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Pranav Venutur</span>
+        <span class="footer-built">Built with passion for engineering</span>
+        <div class="footer-links">
+          <a href="mailto:pranav.venutur@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/pranav-venutur/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+<script data-pplx-inline-edit>
+(function(){
+  if(window===window.top)return;
+  function inlineAll(orig,clone){
+    if(orig.nodeType!==1)return;
+    try{
+      var cs=getComputedStyle(orig);
+      var t='';
+      for(var i=0;i<cs.length;i++){t+=cs[i]+':'+cs.getPropertyValue(cs[i])+';';}
+      clone.style.cssText=t;
+    }catch(e){}
+    var oc=orig.children,cc=clone.children;
+    for(var j=0;j<oc.length&&j<cc.length;j++){inlineAll(oc[j],cc[j]);}
+  }
+  function stripExternal(clone){
+    var imgs=clone.querySelectorAll('img');
+    for(var i=0;i<imgs.length;i++){
+      var s=imgs[i].getAttribute('src');
+      if(s&&!s.startsWith('data:'))imgs[i].removeAttribute('src');
+    }
+    var all=clone.querySelectorAll('*');
+    for(var i=0;i<all.length;i++){
+      var st=all[i].style.cssText;
+      if(st&&st.indexOf('url(')>=0){
+        all[i].style.cssText=st.replace(/url\(["']?(?!data:)[^)"']*["']?\)/gi,'none');
+      }
+    }
+  }
+  window.addEventListener('message',function(e){
+    if(!e.data||e.data.type!=='INLINE_EDIT_CAPTURE_REQUEST')return;
+    var scrollX=window.scrollX||window.pageXOffset||0;
+    var scrollY=window.scrollY||window.pageYOffset||0;
+    var w=window.innerWidth,h=window.innerHeight;
+    try{
+      var clone=document.documentElement.cloneNode(true);
+      var rm=clone.querySelectorAll('script,link[rel="stylesheet"],style');
+      for(var i=0;i<rm.length;i++){rm[i].remove();}
+      inlineAll(document.documentElement,clone);
+      stripExternal(clone);
+      var html=new XMLSerializer().serializeToString(clone);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="'+w+'" height="'+h+'">'
+        +'<foreignObject width="100%" height="100%">'
+        +'<div xmlns="http://www.w3.org/1999/xhtml" style="width:'+w+'px;height:'+h+'px;overflow:hidden">'
+        +'<div style="transform:translate(-'+scrollX+'px,-'+scrollY+'px);transform-origin:top left">'
+        +html+'</div></div></foreignObject></svg>';
+      var svgUrl='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+      var img=new Image();
+      img.onload=function(){
+        var c=document.createElement('canvas');c.width=w;c.height=h;
+        c.getContext('2d').drawImage(img,0,0);
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:c.toDataURL('image/png'),scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.onerror=function(){
+        window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+      };
+      img.src=svgUrl;
+    }catch(err){
+      window.parent.postMessage({type:'INLINE_EDIT_SCREENSHOT_RESULT',dataUrl:null,scrollX:scrollX,scrollY:scrollY},'*');
+    }
+  });
+})();
+</script></body>
+</html>
